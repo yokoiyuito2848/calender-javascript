@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>日めくりカレンダー</title>
+    <link rel="stylesheet" href="css/sun.css">
+    <link rel="stylesheet" href="css/style.css">   
+</head>
+<body id="body">
+    <div class="sun"></div>
+        <div class="left">
+            <form id="dataForm">
+                <label for="data">メモを入力:</label>
+                <input type="text" id="data" />
+                <button type="submit" class="mouse">保存</button>
+                <button id="deleteDataButton" class="mouse">削除</button>
+                <div id="savedData">保存されたメモ: </div>
+            </form>
+        </div>
+        <div class="right">
+            <iframe src="calender.html"></iframe>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/save.js"></script>
+</body>
+</html>

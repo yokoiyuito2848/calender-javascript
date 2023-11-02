@@ -1,0 +1,26 @@
+
+#body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #87CEEB;
+}
+.sun {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #FFD700 10%, transparent 11%);
+    background-size: 300% 300%;
+    background-position: center bottom;
+    position: absolute;
+    bottom: -100px; /* 初期位置：画面下から */
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    animation: rise 5s linear forwards; /* アニメーションの設定 */
+}
+@keyframes rise {
+    to {
+        bottom: 100%; /* 目標位置：画面上まで */
+        background-position: center top;
+    }
+}
